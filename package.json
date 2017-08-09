@@ -1,0 +1,30 @@
+{
+  "name": "sockets",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha server/**/*.test.js",
+    "start": "node server/server.js",
+    "test-watch": "nodemon --exec 'npm test'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3",
+    "socket.io": "^2.0.3"
+  },
+  "devDependencies": {
+    "expect": "^1.20.2",
+    "mocha": "^3.5.0",
+    "nodemon": "^1.11.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/get4prince/socket-basic.git"
+  },
+  "bugs": {
+    "url": "https://github.com/get4prince/socket-basic/issues"
+  },
+  "homepage": "https://github.com/get4prince/socket-basic#readme",
+  "description": ""
+}

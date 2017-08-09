@@ -1,0 +1,54 @@
+body{
+  background-image: url(http://www.hdfinewallpapers.com/HDWallpapers/Big/Ghost-and-Demon/Horror_Ghosts_with_Gun_HD_Photo.jpg);
+  background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover ;
+}
+html{
+  max-width: 100%;
+  max-height: 100%;
+
+}
+
+.wrapper{
+  margin:0 10%;
+  margin-top: 5%;
+  background: transparent;
+
+
+}
+.wrapper h1{
+  margin-bottom: 0px;
+}
+.banner-title{
+  text-align: center;
+  color:#b32d00;
+  font-family: 'Walter Turncoat', cursive;
+  opacity: 0.6;
+  background-color: #222;
+}
+.msg{
+  background: #222;
+  overflow-y: scroll;
+  height: 13em;
+  width: auto;
+  opacity: .5;
+  color: #fff;
+  font-family: 'Indie Flower', cursive;
+  font-size: 2em;
+
+}
+.msg ul{
+  text-decoration: none;
+  list-style: none;
+}
+.msg-inp{
+  position: relative;
+}
+.btnss{
+  display: inline;
+}
+.btn-warning{
+  background-color: #b32d00;
+  border-color: #b32d00;
+}
