@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Sockets.io</title>
+	<link href="https://fonts.googleapis.com/css?family=Walter+Turncoat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="/css/styles.css">
+</head>
+<body >
+
+<div class="wrapper">
+	<h1 class="banner-title">Welcome to Prince's dating room.</h1>
+		<div class="msg" id="msg">
+			<ul id="messages"></ul>
+		</div>
+<div class="msg-inp">
+
+			<form id="message-form">
+				<div class="btnss">
+					<input class="form-control" name="message" type="text" placeholder="Message" autofocus autocomplete="off"/>
+					<button class="btn btn-warning">Send</button>
+					<button class="btn btn-success" id='send-location'>Send Location</button>
+				</div>
+			</form>
+</div>
+</div>
+
+	<script id="message-template" type="text/template">
+			<li>
+				<div class=msg-head>
+					<span class="label label-default">{{from}}</span>
+					<span class="label label-default" class="time">{{time}}</span>
+				</div>
+					<p>{{text}}</p>
+			</li>
+	</script>
+
+	<script id="location-template" type="text/template">
+			<li>
+				<div class=msg-head>
+					<span class="label label-default">{{from}}</span>
+					<span class="label label-default" class="time">{{time}}</span>
+				</div>
+					<a href="{{url}}" target="_blank">My current location</a>
+			</li>
+	</script>
+
+			<script src="/socket.io/socket.io.js"></script>
+			<script src="/js/libs/jquery-3.2.1.min.js"></script>
+			<script src="/js/libs/mustache.js"></script>
+			<script src="/js/chat.js"></script>
+</body>
+
+</html>

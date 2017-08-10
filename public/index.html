@@ -1,34 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8">
-	<title>Sockets.io</title>
-	<link href="https://fonts.googleapis.com/css?family=Walter+Turncoat" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" href="/css/styles.css">
-</head>
-<body >
-
-<div class="wrapper">
-	<h1 class="banner-title">Welcome to Prince's dating room.</h1>
-	<div class="msg">
-			<ul id="messages"></ul>
-</div>
-<div class="msg-inp">
-
-			<form id="message-form">
-				<div class="btnss">
-					<input class="form-control" name="message" type="text" placeholder="Message" autofocus autocomplete="off"/>
-					<button class="btn btn-warning">Send</button>
-					<button class="btn btn-success" id='send-location'>Send Location</button>
-</div>
-			</form>
-</div>
-</div>
-			<script src="/socket.io/socket.io.js"></script>
-			<script src="/js/libs/jquery-3.2.1.min.js"></script>
-			<script src="/js/index.js"></script>
-</body>
-
+  <head>
+    <meta charset="utf-8">
+    <title>Join | ChatApp</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scale=no">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+  </head>
+  <body class="background">
+      <div class="mid">
+        <form>
+          <h3 class="chat">Chat</h3>
+          <p class="text">Display name</p>
+          <input class="form-control" type="text" name="name" />
+          <p class="text">Join room by name</p>
+          <input class="form-control" type="text" name="room" />
+          <div class="button-mid">
+            <button class="btn btn-primary" type="submit" name="button">Join</button>
+          </div>
+        </form>
+      </div>
+  </body>
 </html>

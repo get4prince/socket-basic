@@ -50,3 +50,45 @@ html{
   background-color: #b32d00;
   border-color: #b32d00;
 }
+.msg-head{
+  display: inline;
+}
+.label-default {
+    background-color: rgba(119, 119, 119, 0);
+}.time{
+  opacity: 0.3
+}
+.background{
+  background-image: url('http://www.hdfinewallpapers.com/HDWallpapers/Big/Ghost-and-Demon/Horror_Ghosts_with_Gun_HD_Photo.jpg');
+  background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover ;
+}
+.mid{
+  margin-left: 35%;
+  margin-right: 35%;
+  margin-top: 15%;
+  background-color: #f2f2f2;
+  padding: 2%;
+  border: 2px #f2f2f2;
+  border-radius: 5px;
+}
+.chat{
+  font-family: 'Indie Flower', cursive;
+  text-align: center;
+  color: rgba(162, 3, 3, 0.97)
+}
+.text{
+  margin: 0 0 0px;
+}
+.form-control{
+  margin-bottom: 10px;
+}
+.btn btn-primary{
+  margin-left: 35%;
+}
+.button-mid{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
