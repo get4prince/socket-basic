@@ -20,12 +20,12 @@ io.on('connection',(socket)=>{
 
 	 socket.on('createMessage',(message,callback)=>{
 		 console.log('createMessage',message);
-		 io.emit('newMessage',generateMessage(message.from , message.text));
+		 io.emit('newMessage',generateMessage(message.from , message.text ,message.time));
 		 callback();
 	});
 
 		socket.on('createLocationMessage',(coords)=>{
-			io.emit('newLocationMessage',generateLocationMessage('user',coords.latitude,coords.longitude));
+			io.emit('newLocationMessage',generateLocationMessage('user',coords.latitude,coords.longitude,message.time));
 		});
 
 	 socket.on('disconnect',()=>{
