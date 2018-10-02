@@ -50,4 +50,4 @@ io.on('connection', function(socket){
 });
 Then if you refresh a tab several times you can see it in action:
 
-A console displaying several messages, indicating that some users have connected and disconnected
+A console displaying several messages, indicating that some users have connected and disconnected.
